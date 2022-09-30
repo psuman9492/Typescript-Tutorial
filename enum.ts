@@ -3,16 +3,17 @@ console.log("Welcome to Type-Script - Madan");
 // enum can be used to store a paticular value in a varible and use the variable name to acess the value stored in the enum.
 
 enum directions {
-  //   north = "^",
+  northsymbol = "^",
   north = "nor",
   south = "v",
   east = ">",
   west = "<",
 }
 
-// const way = {
-//   result : string
-// };
+const way = {
+  result: directions.northsymbol,
+};
+console.log(way.result);
 
 const result =
   "first go " + directions.north + " " + "then go " + directions.west;
@@ -24,3 +25,9 @@ console.log(result);
 // value from '^' to 'nor'
 
 // then the result will be chnaged with out chnaging the code
+
+if (directions.northsymbol === "^") {
+  console.log("The information matches");
+} else {
+  console.log("The information does not match");
+}
